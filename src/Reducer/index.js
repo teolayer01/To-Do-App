@@ -1,3 +1,4 @@
+// Nuestro estado inicial
 const initialState = [
     {
         id: 0,
@@ -13,6 +14,7 @@ const initialState = [
     }
 ]
 
+// obtiene nuestro estado inicial, el tipo de acción y su respuesta
 export let reducer = (state = initialState, { type, payload }) => {
     switch (type) {
         default: 

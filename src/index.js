@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// reportWebVitals --> Reporta estado de web  en la terminal y el navegador al guardar cambios
 import reportWebVitals from './reportWebVitals';
+// Provider --> Permite que el store este disponible en cualquier componente de la app
 import { Provider } from 'react-redux'
+// store --> nuestro estado global
 import store from './Store/index'
 
 ReactDOM.render(
