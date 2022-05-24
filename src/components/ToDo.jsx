@@ -4,7 +4,8 @@ import React, { useState } from "react"
 import { useDispatch } from "react-redux"
 // Actions
 import { eliminarToDo, editarToDo } from "../Actions"
-const ToDo = () => {
+
+const ToDo = ({ todo }) => {
     return (
         <div>
             <div>

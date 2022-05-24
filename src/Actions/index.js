@@ -16,10 +16,10 @@ export let editarToDo = (todo) => {
     }
 }
 
-export let eliminarToDo = (todo) => {
+export let eliminarToDo = (todoId) => {
     return {
         type: ELIMINAR_TODO,
-        payload: todo
+        payload: todoId
     }
 }
 
