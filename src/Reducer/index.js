@@ -2,15 +2,7 @@
 const initialState = [
     {
         id: 0,
-        name: "Lavar los platos"
-    },
-    {
-        id: 1,
-        name: "Hacer la hw"
-    },
-    {
-        id: 2,
-        name: "Bañarme"
+        name: ""
     }
 ]
 
