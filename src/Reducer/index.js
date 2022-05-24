@@ -14,4 +14,4 @@ export let reducer = (state = initialState, { type, payload }) => {
     }
 }
 
-export default initialState
+export default reducer
