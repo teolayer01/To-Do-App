@@ -39,13 +39,13 @@ const ToDo = ({ todo }) => {
                 <div>
                     {
                         editar ? 
-                        <input 
-                            type='text'
-                            value={newTodo}
-                            onChange={e => handleChange(e)}
-                        />
+                            <input 
+                                type='text'
+                                value={newTodo}
+                                onChange={e => handleChange(e)}
+                            />
                         :
-                        <h2>{todo.todo}</h2>
+                            <h2>{todo.todo}</h2>
                     }
                 </div>
                 <button
