@@ -5,7 +5,7 @@ import { AGREGAR_TODO, EDITAR_TODO, ELIMINAR_TODO } from "../Actions"
 const initialState = [
     {
         id: 0,
-        todo: ""
+        todo: "Primer Todo"
     }
 ]
 

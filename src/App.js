@@ -7,11 +7,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // Componentes
 import Credits from './components/credits';
 import Home from './components/home';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <Navbar/>
         <Routes>
           <Route path='/' exact element={<Home/>}/>
           <Route path='/credits' element={<Credits/>}/>

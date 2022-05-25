@@ -1,11 +1,13 @@
 import React from "react";
 import CrearToDo from "./CrearToDo";
+import ToDoList from "./ToDoList";
 
 const Home = () => {
     return (
         <div>
-            <h1>To-Do App perri</h1>
+            <h1>My To-Dos</h1>
             <CrearToDo/>
+            <ToDoList/>
         </div>
     )
 }

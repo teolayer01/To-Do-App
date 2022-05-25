@@ -38,6 +38,7 @@ const CrearToDo = () => {
                 <input
                     value={todo}
                     onChange={(e) => handleChange(e)}
+                    placeholder='Tengo que...'
                     type='text'
                 />
             </div>
