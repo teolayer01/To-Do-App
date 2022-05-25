@@ -5,7 +5,7 @@ import { AGREGAR_TODO, EDITAR_TODO, ELIMINAR_TODO } from "../Actions"
 const initialState = [
     {
         id: 0,
-        todo: "Primer Todo"
+        todo: "Primer todo"
     }
 ]
 
@@ -18,12 +18,17 @@ let reducer = (state = initialState, { type, payload }) => {
             newTodos.push(payload) // agregamos nuevo todo al final
             return newTodos
         case EDITAR_TODO:
-            newTodos.map(t => {
-                if(t.id === payload.id) {
-                   t.todo = payload.todo   
+            let index = -1
+            for(let i = 0; i < newTodos.length; i++) {
+                index++
+                if(newTodos[i].id === payload.id) {
+                    break
                 }
-            })
-            return newTodos
+            }
+            if(index !== -1) {
+                newTodos[index] = payload
+                return newTodos
+            }
         case ELIMINAR_TODO: 
             // filtramos para esten solo los que tienen id diferente al especificado
             newTodos = newTodos.filter(t => t.id !== payload) 
